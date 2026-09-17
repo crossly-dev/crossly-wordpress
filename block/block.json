@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "crossly/catalog",
+  "title": "Crossly Catalog",
+  "category": "widgets",
+  "icon": "grid-view",
+  "description": "Your Crossly listings, with a buy button. Checkout happens on Crossly.",
+  "keywords": ["crossly", "shop", "catalog", "store", "products"],
+  "textdomain": "crossly",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "margin": true, "padding": true }
+  },
+  "attributes": {
+    "limit": { "type": "string", "default": "12" },
+    "query": { "type": "string", "default": "" }
+  },
+  "example": { "attributes": { "limit": "6" } }
+}
